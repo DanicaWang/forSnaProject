@@ -1,0 +1,16 @@
+def collatz(number):
+    if number % 2 == 0:
+        num = number // 2
+        print(num)
+    else:
+        num = number * 3 + 1
+        print(num)
+    return num
+try:
+    number = int(input('Please enter an integar:'))
+    while number != 1:
+        number = collatz(number)
+        continue
+    print('done')
+except:
+    print('Int are allowed')
